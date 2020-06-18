@@ -25,6 +25,7 @@ def getTotalFollowers(api, user_id):
         next_max_id = api.LastJson.get('next_max_id', '')
     return followers
 
+
 def getTotalFollowings(api, user_id):
     """
     Returns the list of followers of the user.
@@ -43,6 +44,7 @@ def getTotalFollowings(api, user_id):
         next_max_id = api.LastJson.get('next_max_id', '')
     return followers
 
+
 def nonFollowers(followers, followings):
     nonFollowers = {}
     dictFollowers = {}
@@ -54,6 +56,7 @@ def nonFollowers(followers, followings):
             nonFollowers[followedUser['username']] = followedUser['pk']
 
     return nonFollowers
+
 
 def unFollow(number : int):
     api = InstagramAPI(USERNAME, PASS)
