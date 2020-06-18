@@ -80,5 +80,5 @@ def unFollow(number : int):
         
 
 if __name__ == "__main__":
-    UNFOLLOW(5) # Keep that number low to avoid suspicion on Instagram.
+    unFollow(5) # Keep that number low to avoid suspicion on Instagram.
 
